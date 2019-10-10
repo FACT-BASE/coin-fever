@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <style></style>
+    <title>CoinDozer</title>
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("./serviceWorker.js")
+            .then(function(registration) {
+              if (typeof registration.update == "function") {
+                registration.update();
+              }
+            })
+            .catch(function(error) {
+              console.log("Error Log: " + error);
+            });
+        }
+      </script>
+    <script src="playcanvas-stable.min.js"></script>
+    <script>
+        ASSET_PREFIX = "";
+        SCRIPT_PREFIX = "";
+        SCENE_PATH = "814388.json";
+        CONTEXT_OPTIONS = {
+            'antialias': true,
+            'alpha': true,
+            'preserveDrawingBuffer': false,
+            'preferWebGl2': true
+        };
+        SCRIPTS = [ 21040297, 21042182, 20698211, 20698765, 21040213, 21040322, 21043061, 21044874, 21044937, 21045095, 21048486, 22770013, 23745570, 23801582, 23842399, 23842402, 23846325, 23849990 ];
+        CONFIG_FILENAME = "config.json";
+        INPUT_SETTINGS = {
+            useKeyboard: true,
+            useMouse: true,
+            useGamepads: false,
+            useTouch: true
+        };
+        pc.script.legacy = false;
+        PRELOAD_MODULES = [
+            {'moduleName' : 'Ammo', 'glueUrl' : 'files/assets/23808041/1/ammo.wasm.js', 'wasmUrl' : 'files/assets/23808039/1/ammo.wasm.wasm', 'fallbackUrl' : 'files/assets/23808040/1/ammo.js'},
+        ];
+    </script>
+</head>
+<body>
+    <script src="__modules__.js"></script>
+    <script src="__start__.js"></script>
+    <script src="__loading__.js"></script>
+</body>
+</html>

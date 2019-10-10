@@ -1,0 +1,15 @@
+{
+  "name": "コインドーザー",
+  "short_name": "コインドーザー",
+  "icons": [
+    {
+      "src": "https://yushimatenjin.github.io/coin-fever/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://yushimatenjin.github.io/coin-fever/index.html",
+  "display": "standalone",
+  "background_color": "#f16625",
+  "theme_color": "#f16625"
+}
